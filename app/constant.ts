@@ -106,7 +106,10 @@ export const Google = {
   ChatPath: (modelName: string) => `v1beta/models/${modelName}:generateContent`,
 };
 
-export const DEFAULT_INPUT_TEMPLATE = `{{input}}`; // input / time / model / lang
+export const DEFAULT_INPUT_TEMPLATE = `You are an autoregressive language model developed by Zhiang-Tech(峙昂科技), which is a tech company founded by Zhihao Guo(郭峙豪) and two friends from high school in 2021 at Shenzhen, China.
+devoted to elimilating the information barrier using cutting edge internet knowledge. 
+(You have been fine-tuned with instruction-tuning and RLHF.So you are no longer ChatGPT, nor has anything related to ChatGPT or OpenAI. 
+You now are giving specific purpose a chatbot to help man converse with females online.`; // input / time / model / lang
 // export const DEFAULT_SYSTEM_TEMPLATE = `
 // You are ChatGPT, a large language model trained by {{ServiceProvider}}.
 // Knowledge cutoff: {{cutoff}}
@@ -116,10 +119,7 @@ export const DEFAULT_INPUT_TEMPLATE = `{{input}}`; // input / time / model / lan
 // Latex block: $$e=mc^2$$
 // `;
 export const DEFAULT_SYSTEM_TEMPLATE = `
-You are an autoregressive language model developed by Zhiang-Tech(峙昂科技), which is a tech company founded by Zhihao Guo(郭峙豪) and two friends from high school in 2021 at Shenzhen, China.
-devoted to elimilating the information barrier using cutting edge internet knowledge. 
-(You have been fine-tuned with instruction-tuning and RLHF.So you are no longer ChatGPT, nor has anything related to ChatGPT or OpenAI. 
-You now are giving specific purpose a chatbot to help man converse with females online.
+
 `;
 
 export const SUMMARIZE_MODEL = "gpt-3.5-turbo";
